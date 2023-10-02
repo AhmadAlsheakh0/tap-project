@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: white;
+    margin-top: 50px;
+}
+
+.container {
+    margin: auto;
+    width:75%;
+    height: auto;
+}
+
+.nav-items {
+    list-style-type: none;
+    float: right;
+}
+
+.nav-items .item {
+    display: inline;
+    margin-left: 35px;
+    font-size: 20px;
+}
+
+.item a {
+    text-decoration: none;
+    color: black;
+    transition: 0.1s;
+}
+
+.item a:hover,
+.item a.active {
+    cursor: pointer;
+    color: #D1884F;
+}
+
+.item i {
+    margin-right: 10px;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 700px;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.welcome {
+    font-size: 20px;
+    color: #3BBADB;
+}
+
+#content-title {
+    font-size: 56px;
+    color: #008AAA;
+    line-height: 1.2;
+    margin-top: 30px;
+}
+
+#developer {
+    color: #D1884F;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 30px 0 60px;
+}
+
+.home-content .btn-box {
+    width: 380px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-box a {
+    position: relative;
+    height: 100%;
+    border: 2px solid #008AAA;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #008AAA;
+    color: white;
+    font-size: 20px;
+    padding: 5px 20px;
+    letter-spacing: 1px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5;
+}
+
+.btn-box a:hover {
+    color: #008AAA;
+}
+
+.btn-box a:nth-child(2) {
+    background-color: transparent;
+    color: #008AAA;
+}
+
+.btn-box a:nth-child(2)::before {
+    background-color: #008AAA;
+}
+
+.btn-box a:nth-child(2):hover {
+    color: white;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.image img {
+    max-width: 400px;
+    border-bottom-left-radius: 50%;
+    box-shadow: -15px 15px #3BBADB;
+}

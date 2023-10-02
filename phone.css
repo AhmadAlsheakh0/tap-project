@@ -1,0 +1,25 @@
+#nav-bar {
+    float: left;
+}
+
+.nav-items .item {
+    font-size: 14px;
+}
+
+.home {
+    flex-direction: column;
+}
+
+.home-content {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.welcome {
+    font-size: 15px;
+}
+
+#content-title {
+    font-size: 40px;
+}
+
